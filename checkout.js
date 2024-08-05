@@ -105,10 +105,11 @@ function pieceButton(){
     const minus=kutu.firstElementChild
     const adet=plus.previousElementSibling
 
+plus.onclick=()=>{
 
 
 
-    
+}
   })
 
 }
