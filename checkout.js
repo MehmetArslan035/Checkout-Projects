@@ -107,9 +107,25 @@ function pieceButton(){
 
 plus.onclick=()=>{
 
+adet.textContent = +(adet.textContent)+1;
 
+plus.closest(".card-body").querySelector(".product-total").textContent=plus.closest(".card-body").querySelector(".indirim-price").textContent * adet.textContent;
+
+calculateCardTotal();
 
 }
+minus.onclick=()=>{
+
+  adet.textContent = +(adet.textContent)-1;
+  
+  plus.closest(".card-body").querySelector(".product-total").textContent=plus.closest(".card-body").querySelector(".indirim-price").textContent * adet.textContent;
+  
+  calculateCardTotal();
+
+  
+  
+  }
+
   })
 
 }
