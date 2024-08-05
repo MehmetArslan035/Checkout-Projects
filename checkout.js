@@ -122,7 +122,12 @@ minus.onclick=()=>{
   
   calculateCardTotal();
 
-  
+  if(adet.textContent < 1){
+
+    alert("sileyim mi?")
+
+    minus.closest(".card").remove()
+  }
   
   }
 
