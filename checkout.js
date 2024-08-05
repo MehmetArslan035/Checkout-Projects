@@ -87,5 +87,12 @@ function calculateCardTotal(){
 
 const pToplam = Array.from(toplam).reduce((acc,item)=>acc + Number(item.textContent),0);
 
-console.log(pToplam);
+document.querySelector(".productstoplam").textContent=pToplam
+document.querySelector(".vergi").textContent=pToplam * tax
+
+document.querySelector(".kargo").textContent=pToplam ? shipping:0
+
+document.querySelector("toplam").textContent=pToplam ? (pToplam + pToplam * tax + shipping):0
+
+
 }
